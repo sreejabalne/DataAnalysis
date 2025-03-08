@@ -20,7 +20,7 @@ FROM practice_schema.patients_table
 )
 SELECT gender,Age, count(*) as patient_count
 FROM Demographic_Analysis
-GROUP BY gender;
+GROUP BY gender,Age;
 
 
 -- Which diagnoses are most prevalent among patients and how do they vary across the different demographic groups, including gender and age? 
